@@ -42,3 +42,11 @@ def admin_panel_keyboard() -> InlineKeyboardMarkup:
             [InlineKeyboardButton(text='🕒 Oxirgi 5 e’lon', callback_data='admin:recent')],
         ]
     )
+
+
+def buy_button(username: str) -> InlineKeyboardMarkup:
+    return InlineKeyboardMarkup(
+        inline_keyboard=[
+            [InlineKeyboardButton(text='💬 Sotuvchiga yozish', url=f'https://t.me/{username}')]
+        ]
+    )
